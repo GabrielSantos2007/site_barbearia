@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../site_barbearia-main//barbearia.css">
+    <title>Document</title>
+    <script>
+        alert('BEM VINDO AO NOSSO CATÁLOGO');
+
+        dia = new Array ("Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado")
+        mes = new Array ("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho","Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")
+        data = new Date 
+
+        //POP_UP de detalhes do produto
+        function abrirDetalhes(nome,imagem,descricao) {
+            const url = `auladeagora.html?nome=${encodeURIComponent(nome)}&imagem=${encodeURIComponent(imagem)}&descricao=${encodeURIComponent(descricao)}`;
+            window.open(url, "_blank", "width=800,height=700");
+        }
+
+
+    
+    </script>
+</head>
+<body>
+    <!--Serviços-->
+    <main>
+        <section class="nossosProdutos">
+            <h2> Nossos Produtos </h2>
+
+        </section>
+
+        <div class="container": onclick="abrirDetalhes('Pano de prato','IMG/cabelo.png','Descricao do pano de prato')">
+            <div class="card">
+                <img src="IMG/cabelo.png" alt="Produto 1">
+                <h2>Corte de Cabelo</h2>
+                <p> Tempo médio: 30 minutos</p>
+                <span class="preco">R$ 30,00</span>
+            </div>
+    
+            <div class="card">
+                <img src="IMG/cabelo_barba.png" alt="Produto 2">
+                <h2> Corte de Cabelo + Barba</h2>
+                <p> Tempo médio: 1 hora</p>
+                <span class="preco">R$ 50,00</span>
+            </div>
+    
+            <div class="card">
+                <img src="IMG/barba.png" alt="Produto 3">
+                <h2>Barba</h2>
+                <p>Tempo médio: 30 minutos</p>
+                <span class="preco">R$ 25,00</span>
+            </div>
+
+            <div class="card">
+                <img src="IMG/sobrancelha.png" alt="Produto 2">
+                <h2>Sobrancelha</h2>
+                <p>Tempo médio: 10 minutos</p>
+                <span class="preco">R$ 15,00</span>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -11,8 +11,8 @@ body {
 /* Logo centralizada */
 .logo {
     width: 100%;
-    max-width: 250px;
-    margin: 20px auto;
+    max-width: 200px;
+    margin-left: 20px auto;
     display: block;
 }
 
@@ -25,7 +25,7 @@ body {
 
 /* Header sem margens */
 header {
-    background-color: black;
+    background-color: rgba(243, 168, 7, 0.932);
     width: 100%;
 }
 
@@ -37,29 +37,59 @@ header {
 
 /* Menu alinhado ao centro */
 nav {
-    margin-top: 20px;
-    text-align: center;
+    margin-top: -80px;
+    text-align: right;
 }
 
 nav li {
     display: inline;
-    color: rgba(243, 168, 7, 0.932);
+    color: rgba(0, 0, 0, 0.932);
     font-size: 30px;
     margin: 0 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* Sessão sobre nós */
+/* Sobre nós */
 .sobre_nos {
-    margin: 0 auto;
-    width: 80%;
-    text-align: center;
-    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    font-family: "Rubik", serif;
 }
 
-.sobre_nos p {
-    color: white;
-    font-size: 15px;
-    margin: 10px auto;
+.sobre-nos-card {
+    display: flex;
+    /* importante para alinhar imagem e texto lado a lado */
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    /* opcional: alinha verticalmente */
+    gap: 40px;
+    /* espaço entre texto e imagem */
+}
+
+.texto-sobre-nos {
+    flex: 1;
+    color: rgb(0, 0, 0);
+    margin-bottom: 24%;
+    margin-top: 10%;
+    border: 2px solid #ccc;
+    /* cor e espessura do contorno */
+    padding: 20px;
+    /* espaço interno para o texto não encostar nas bordas */
+    border-radius: 8px;
+    /* cantos levemente arredondados (opcional) */
+    background-color: #fdfdfd;
+    /* cor de fundo (opcional para destaque) */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    /* sombra leve para profundidade */
+}
+
+.img-sobre-nos {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
 }
 
 /* Títulos */
@@ -123,7 +153,6 @@ h2 {
 /* Rodapé */
 footer {
     background: rgba(243, 168, 7, 0.932);
-    background: url("IMG/img_rodape.png") center/cover no-repeat;
     background-blend-mode: darken;
     padding: 30px 0 10px;
     width: 100%;
@@ -131,19 +160,16 @@ footer {
 }
 
 footer p {
-    color: rgba(250, 250, 250, 0.932);;
+    color: rgba(0, 0, 0, 0.932);
+    ;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 25px;
     font-family: sans-serif;
-    margin-top: -40px;
 }
 
-.logo_rodape{
-    width: 100%;
-    margin-top: 20px;
-}
+
 .fa {
-  color: rgba(255, 255, 255, 0.932); 
+    color: rgba(0, 0, 0, 0.932);
 }
 
 /* Container dos cards */
@@ -198,4 +224,7 @@ footer p {
     margin: 10px 0;
 }
 
-
+/*link serviços*/
+.linkservicos {
+    color: rgba(243, 168, 7, 0.932);
+}
